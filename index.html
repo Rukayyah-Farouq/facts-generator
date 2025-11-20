@@ -739,13 +739,12 @@
 
     twitterShare.addEventListener('click', () => {
       const text = encodeURIComponent(`Did you know? ${currentFact}`);
-      const url = `https://twitter.com/intent/tweet?text=${text}`;
+      const url = `https://twitter.com/intent/tweet?text=${text, 'checkout "Randofact.vercel.app" for more facts '}`;
       window.open(url, '_blank', 'noopener,noreferrer');
     });
-
     facebookShare.addEventListener('click', () => {
       const text = encodeURIComponent(`Did you know? ${currentFact}`);
-      const url = `https://www.facebook.com/sharer/sharer.php?quote=${text}`;
+      const url = `https://www.facebook.com/sharer/sharer.php?quote=${text, 'checkout "Randofact.vercel.app" for more facts '}`;
       window.open(url, '_blank', 'noopener,noreferrer');
     });
 
@@ -768,7 +767,7 @@
 
     whatsappShare.addEventListener('click', () => {
       const text = encodeURIComponent(`Did you know? ${currentFact}`);
-      const url = `https://wa.me/?text=${text}`;
+      const url = `https://wa.me/?text=${text, 'checkout "Randofact.vercel.app" for more facts '}`;
       window.open(url, '_blank', 'noopener,noreferrer');
     });
 
